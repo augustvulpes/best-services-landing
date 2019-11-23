@@ -1,0 +1,373 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0; }
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+:focus, :active {
+  outline: none; }
+
+a:focus, a:active {
+  outline: none; }
+
+nav, footer, header, aside {
+  display: block; }
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+input, button, textarea {
+  font-family: inherit; }
+
+input::-ms-clear {
+  display: none; }
+
+button {
+  cursor: pointer; }
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0; }
+
+a, a:visited {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+ul li {
+  list-style: none; }
+
+img {
+  vertical-align: top; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400; }
+
+@font-face {
+  font-family: Sansation;
+  src: url("../fonts/sansation.ttf"); }
+
+@font-face {
+  font-family: Sansation Bold;
+  src: url("../fonts/sansation-bold.ttf"); }
+
+@font-face {
+  font-family: Sansation Regular;
+  src: url("../fonts/sansation-regular.ttf"); }
+
+@font-face {
+  font-family: Myriad;
+  src: url("../fonts/myriad.ttf"); }
+
+@font-face {
+  font-family: Neoteric Bold;
+  src: url("../fonts/neoteric-bold.ttf"); }
+
+html {
+  scroll-behavior: smooth; }
+
+body {
+  font-family: Sansation Regular;
+  background-color: white; }
+
+.row {
+  margin: 0; }
+
+.scrolled {
+  background-color: rgba(29, 29, 29, 0.8); }
+
+header {
+  z-index: 1;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  text-shadow: 1px 0px 10px black;
+  font-family: Sansation;
+  position: fixed;
+  border-bottom: 1px solid #6f668a; }
+  header .navbar-brand {
+    font-size: 24px;
+    line-height: 28px; }
+    header .navbar-brand span {
+      color: #da2346; }
+  header .nav-item a {
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    color: white !important;
+    font-size: 18px;
+    line-height: 21px; }
+    header .nav-item a:hover {
+      color: #097e89 !important; }
+  header .form-inline {
+    height: 40px;
+    width: 150px; }
+    header .form-inline a i {
+      color: white;
+      width: 15px; }
+    header .form-inline a button {
+      -webkit-transition: 0.5s;
+      -o-transition: 0.5s;
+      transition: 0.5s;
+      margin-right: 5px;
+      padding: 10px;
+      background: none;
+      border: 1px solid #6f668a;
+      border-radius: 50px; }
+      header .form-inline a button:hover {
+        background-color: #da2346; }
+
+.top {
+  background: url("../images/top-bg.png") no-repeat 50% 30%;
+  background-size: cover;
+  color: white; }
+  .top .space {
+    height: 300px; }
+  .top .container .top-block {
+    min-height: 575px;
+    width: 100%; }
+    .top .container .top-block h1 {
+      font-family: Sansation Bold;
+      line-height: 40px;
+      font-size: 50px;
+      margin-top: 70px; }
+    .top .container .top-block p {
+      font-size: 15px;
+      line-height: 28px;
+      margin-top: 35px; }
+    .top .container .top-block button {
+      -webkit-transition: 0.5s;
+      -o-transition: 0.5s;
+      transition: 0.5s;
+      margin-top: 50px;
+      background: none;
+      border: 2px solid white;
+      border-radius: 5px;
+      padding: 17px 50px;
+      color: white;
+      font-size: 25px; }
+      .top .container .top-block button:hover {
+        background-color: #da2346; }
+
+.about .about-picture {
+  background: url("../images/about.png") no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 700px; }
+
+.about .about-block {
+  padding: 60px; }
+
+.about h2 {
+  font-size: 30px;
+  letter-spacing: 2px;
+  line-height: 30px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid black; }
+
+.about p {
+  margin-top: 35px;
+  font-size: 20px;
+  font-family: Myriad;
+  line-height: 20px; }
+
+.about button {
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  margin-top: 100px;
+  color: white;
+  font-family: Neoteric Bold;
+  font-size: 18px;
+  background: #05a0af;
+  border-radius: 5px;
+  padding: 15px 50px; }
+  .about button:hover {
+    background: white;
+    color: #05a0af;
+    -webkit-box-shadow: 0 0 5px 1px #05a0af;
+    box-shadow: 0 0 5px 1px #05a0af; }
+
+.separator {
+  background: #373737; }
+  .separator.separator-light {
+    background: #fefefe; }
+    .separator.separator-light .separator-head-text {
+      color: #656464; }
+    .separator.separator-light .line {
+      border-bottom: 2px solid #656464; }
+  .separator .line {
+    height: 110px;
+    border-bottom: 2px solid white; }
+  .separator .separator-head-text {
+    margin: 80px 0;
+    font-size: 40px;
+    line-height: 35px;
+    color: white; }
+
+.dev {
+  background: #3d3d3d;
+  color: white; }
+  .dev .dev-item {
+    padding-top: 170px;
+    padding-bottom: 150px; }
+  .dev h2 {
+    font-family: Sansation Bold;
+    margin-top: 50px;
+    font-size: 24px;
+    line-height: 26px; }
+  .dev p {
+    margin-top: 20px;
+    font-size: 15px; }
+  .dev .middle {
+    background: #097e89; }
+  .dev button {
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    background: #959595;
+    border-radius: 5px;
+    margin-top: 25px;
+    color: white;
+    font-size: 16px;
+    padding: 10px 30px; }
+    .dev button:hover {
+      background: white;
+      color: #05a0af;
+      -webkit-box-shadow: 0 0 5px 1px #05a0af;
+      box-shadow: 0 0 5px 1px #05a0af; }
+
+.clients .client-item {
+  text-align: center;
+  height: 150px; }
+  .clients .client-item img {
+    display: block;
+    margin: 0 auto;
+    width: 150px; }
+
+.clients .space {
+  background: #fefefe;
+  height: 100px; }
+
+.contact {
+  background: #097e89;
+  color: white; }
+  .contact h3 {
+    font-size: 30px;
+    line-height: 28px; }
+  .contact p {
+    margin-top: 30px;
+    font-size: 14px; }
+  .contact .row {
+    padding-top: 40px;
+    padding-bottom: 50px; }
+  .contact form {
+    margin-top: 20px;
+    border: 1px solid #84bfc4;
+    border-radius: 5px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+    .contact form input {
+      -webkit-transition: 0.5s;
+      -o-transition: 0.5s;
+      transition: 0.5s;
+      background: none;
+      color: white;
+      width: 42%;
+      padding: 20px 30px; }
+      .contact form input:focus {
+        background: #066c75;
+        -webkit-box-shadow: 0 0 15px 1px #84bfc4;
+        box-shadow: 0 0 15px 1px #84bfc4; }
+      .contact form input#Name {
+        border-right: 1px solid #84bfc4; }
+    .contact form button {
+      -webkit-transition: 0.5s;
+      -o-transition: 0.5s;
+      transition: 0.5s;
+      height: 54px;
+      width: 16%;
+      color: #097e89;
+      font-family: Myriad;
+      font-size: 18px; }
+      .contact form button:hover {
+        -webkit-box-shadow: 0 2px 15px 3px white;
+        box-shadow: 0 2px 15px 3px white; }
+
+footer {
+  background: #474747;
+  padding-top: 25px;
+  padding-bottom: 40px;
+  color: white; }
+  footer .footer-item h4 {
+    font-size: 17px; }
+  footer .footer-item a {
+    margin-top: 10px;
+    font-size: 16px;
+    color: white; }
+    footer .footer-item a:hover {
+      text-decoration: underline; }
+  footer form {
+    width: 75%;
+    background: #cccccc;
+    border-radius: 10px; }
+    footer form input {
+      background: none;
+      padding: 20px 15px;
+      width: 75%; }
+    footer form button {
+      -webkit-transition: 0.5s;
+      -o-transition: 0.5s;
+      transition: 0.5s;
+      background: #0072bc;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+      font-family: Sansation Bold;
+      color: white;
+      font-size: 17px;
+      padding: 20px 0px;
+      width: 25%; }
+      footer form button:hover {
+        background: #0099ff; }
+  footer .line-of-buttons a i {
+    color: #c1c1c1;
+    width: 25px;
+    font-size: 20px; }
+  footer .line-of-buttons a button {
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    margin-right: 5px;
+    padding: 15px 12px;
+    background: #2e2e2e;
+    border-radius: 50px; }
+    footer .line-of-buttons a button:hover {
+      -webkit-box-shadow: inset 0 0 20px 1px black;
+      box-shadow: inset 0 0 20px 1px black; }
+      footer .line-of-buttons a button:hover i {
+        text-shadow: 5px 5px 5px black; }
+
+@media (max-width: 576px) {
+  .space {
+    height: 200px !important; }
+  .top-block {
+    min-height: 500px !important; }
+  .footer-item h4 {
+    font-size: 16px !important; }
+  .footer-item a {
+    font-size: 14px !important; } }

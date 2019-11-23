@@ -1,0 +1,439 @@
+@import "nullfile.scss"; // подключаем файл с обнулением стилей
+
+@font-face {
+	font-family: Sansation;
+	src: url("../fonts/sansation.ttf");
+}
+
+@font-face {
+	font-family: Sansation Bold;
+	src: url("../fonts/sansation-bold.ttf");
+}
+
+@font-face {
+	font-family: Sansation Regular;
+	src: url("../fonts/sansation-regular.ttf");
+}
+
+@font-face {
+	font-family: Myriad;
+	src: url("../fonts/myriad.ttf");
+}
+
+@font-face {
+	font-family: Neoteric Bold;
+	src: url("../fonts/neoteric-bold.ttf");
+}
+
+// переменные
+$crimson: #da2346;
+$turquoise: #05a0af;
+$bluegreen: #097e89;
+$grey: #3d3d3d;
+$darkgrey: #373737;
+$textgrey: #656464;
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: Sansation Regular;
+    background-color: white;
+}
+
+.row {
+    margin: 0;
+}
+
+.scrolled {
+    background-color: rgba(29, 29, 29, 0.8);
+}
+
+header {
+    z-index: 1;
+    transition: 0.5s;
+    text-shadow: 1px 0px 10px black;
+    font-family: Sansation;
+    position: fixed;
+    border-bottom: 1px solid #6f668a;
+
+    .navbar-brand {
+        font-size: 24px;
+        line-height: 28px;
+        span {
+            color: $crimson;
+        }
+    }
+
+    .nav-item a{
+        transition: 0.5s;
+        color: white !important;
+        font-size: 18px;
+        line-height: 21px;
+
+        &:hover {
+            color: $bluegreen !important;
+        }
+    }
+    
+
+    .form-inline {
+        height: 40px;
+        width: 150px;
+
+        a {
+            i {
+                color: white;
+                width: 15px;
+            }
+
+            button {
+                transition: 0.5s;
+                margin-right: 5px;
+                padding: 10px;
+                background: none;
+                border: 1px solid #6f668a;
+                border-radius: 50px;
+
+                &:hover {
+                    background-color: $crimson;
+                }
+            }
+        }
+    }
+}
+
+.top {
+    background: url("../images/top-bg.png") no-repeat 50% 30%;
+    background-size: cover;
+    color: white;
+
+    .space {
+        height: 300px;
+    }
+
+    .container {
+        .top-block {
+            min-height: 575px;
+            width: 100%;
+
+            h1 {
+                font-family: Sansation Bold;
+                line-height: 40px;
+                font-size: 50px;
+                margin-top: 70px;
+            }
+
+            p {
+                font-size: 15px;
+                line-height: 28px;
+                margin-top: 35px;
+            }
+
+            button {
+                transition: 0.5s;
+                margin-top: 50px;
+                background: none;
+                border: 2px solid white;
+                border-radius: 5px;
+                padding: 17px 50px;
+                color: white;
+                font-size: 25px;
+
+                &:hover {
+                    background-color: $crimson;
+                }
+            }
+        }
+    }
+}
+
+.about {
+
+    .about-picture {
+        background: url("../images/about.png") no-repeat center;
+        background-size: cover;
+        width: 100%;
+        height: 700px;
+    }
+
+    .about-block {
+        padding: 60px;
+    }
+
+    h2 {
+        font-size: 30px;
+        letter-spacing: 2px;
+        line-height: 30px;
+        padding-bottom: 15px;
+        border-bottom: 2px solid black;
+    }
+
+    p {
+        margin-top: 35px;
+        font-size: 20px;
+        font-family: Myriad;
+        line-height: 20px;
+    }
+
+    button {
+        transition: 0.5s;
+        margin-top: 100px;
+        color: white;
+        font-family: Neoteric Bold;
+        font-size: 18px;
+        background: $turquoise;
+        border-radius: 5px;
+        padding: 15px 50px;
+
+        &:hover {
+            background: white;
+            color: $turquoise;
+            box-shadow: 0 0 5px 1px $turquoise;
+        }
+    }
+}
+
+.separator {
+    background: $darkgrey;
+
+    &.separator-light {
+        background: #fefefe;
+        
+        .separator-head-text {
+            color: $textgrey;
+        }
+
+        .line {
+            border-bottom: 2px solid $textgrey;
+        }
+    }
+
+    .line {
+        height: 110px;
+        border-bottom: 2px solid white;
+    }
+
+    .separator-head-text {
+        margin: 80px 0;
+        font-size: 40px;
+        line-height: 35px;;
+        color: white;
+    }
+}
+
+.dev {
+    background: $grey;
+    color: white;
+
+    .dev-item {
+        padding-top: 170px;
+        padding-bottom: 150px;;
+    }
+
+    h2 {
+        font-family: Sansation Bold;
+        margin-top: 50px;
+        font-size: 24px;
+        line-height: 26px;
+    }
+
+    p {
+        margin-top: 20px;
+        font-size: 15px;
+    }
+
+    .middle {
+        background: #097e89;
+    }
+
+    button {
+        transition: 0.5s;
+        background: #959595;
+        border-radius: 5px;
+        margin-top: 25px;
+        color: white;
+        font-size: 16px;
+        padding: 10px 30px;
+
+        &:hover {
+            background: white;
+            color: $turquoise;
+            box-shadow: 0 0 5px 1px $turquoise;
+        }
+    }
+}
+
+.clients {
+
+    .client-item {
+        text-align: center;
+        height: 150px;
+
+        img {
+            display: block;
+            margin: 0 auto; 
+            width: 150px;
+        }
+    }
+
+    .space {
+        background: #fefefe;
+        height: 100px;
+    }
+}
+
+.contact {
+    background: $bluegreen;
+    color: white;
+
+    h3 {
+        font-size: 30px;
+        line-height: 28px;
+    }
+
+    p {
+        margin-top: 30px;
+        font-size: 14px;
+    }
+
+    .row {
+        padding-top: 40px;
+        padding-bottom: 50px;
+    }
+
+    form {
+        margin-top: 20px;
+        border: 1px solid #84bfc4;
+        border-radius: 5px;
+        box-sizing: border-box;
+
+        input {
+            transition: 0.5s;
+            background: none;
+            color: white;
+            width: 42%;
+            padding: 20px 30px;
+
+            &:focus {
+                background: #066c75;
+                box-shadow: 0 0 15px 1px #84bfc4;
+            }
+
+            &#Name {
+                border-right: 1px solid #84bfc4;
+            }
+        }
+
+        button {
+            transition: 0.5s;
+            height: 54px;
+            width: 16%;
+            color: $bluegreen;
+            font-family: Myriad;
+            font-size: 18px;
+
+            &:hover {
+                box-shadow: 0 2px 15px 3px white;
+            }
+        }
+    }
+}
+
+footer {
+    background: #474747;
+    padding-top: 25px;
+    padding-bottom: 40px;
+    color: white;
+    
+    .footer-item {
+        h4 {
+            font-size: 17px;
+        }
+
+        a {
+            margin-top: 10px;
+            font-size: 16px;
+            color: white;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    form {
+        width: 75%;
+        background: #cccccc;
+        border-radius: 10px;
+        input {
+            background: none;
+            padding: 20px 15px;
+            width: 75%;
+        }
+
+        button {
+            transition: 0.5s;
+            background: #0072bc;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            font-family: Sansation Bold;
+            color: white;
+            font-size: 17px;
+            padding: 20px 0px;
+            width: 25%;
+
+            &:hover {
+                background: #0099ff;
+            }
+        }
+    }
+
+    .line-of-buttons {
+        
+        a {
+            i {
+                color: #c1c1c1;
+                width: 25px;
+                font-size: 20px;
+            }
+
+            button {
+                transition: 0.5s;
+                margin-right: 5px;
+                padding: 15px 12px;
+                background: #2e2e2e;
+                border-radius: 50px;
+
+                &:hover {
+                    box-shadow: inset 0 0 20px 1px black;
+
+                    i {
+                        text-shadow: 5px 5px 5px black;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 576px) {
+    .space {
+        height: 200px !important;
+    }
+
+    .top-block {
+        min-height: 500px !important;
+    }
+
+    .footer-item {
+        h4 {
+            font-size: 16px !important;
+        }
+
+        a {
+            font-size: 14px !important;
+        }
+    }
+}
